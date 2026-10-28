@@ -64,7 +64,7 @@ On Perlmutter, `$HOME` is shared across login nodes, so a single login covers al
 
 ## 3. Pick a cluster and model
 
-Recommandation is to use Minerva cluster with `inkling-bf16` or `nemotron-3-ultra`. Both support tool calling and reasoning, have 1M-token context, speak all three API protocols, and stay hot so there is no cold start. The table lists only models with tool calling that suit agent work.
+The recommendation is to use the Minerva cluster with `inkling-bf16` or `nemotron-3-ultra`. Both support tool calling and reasoning, have 1M-token context, speak all three API protocols, and stay hot so there is no cold start. The table lists only models with tool calling that suit agent work.
 
 | Model | Cluster | Base URL path | APIs | Context (tokens) | Input | Always hot |
 | --- | --- | --- | --- | --- | --- | --- |
