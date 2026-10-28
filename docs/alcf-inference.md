@@ -81,6 +81,9 @@ All paths sit under `https://inference-api.alcf.anl.gov/resource_server`. The fu
 
 The recommended route is `alcf-ai agent configure <agent>`. It writes the config, and when `alcf-tokens` is on your `PATH` it wires up automatic token refresh. Installing with `uv tool` or `pipx` (section 2) guarantees this. If neither CLI is on `PATH`, it embeds a token that expires after 48 h. You can re-run it at any time.
 
+> [!WARNING]
+> Proprietary harnesses (Claude Code and Codex) have limited support for third-party models. Pointing them at ALCF may stop you from using their first-party models (Claude, GPT) in that harness until you undo the change. Prefer OpenCode or Pi for ALCF models. If you do use Claude Code, the `claude-alcf` wrapper in the manual configuration below leaves your normal `claude` setup untouched.
+
 ```bash
 alcf-ai agent configure opencode  # also: pi | claude | codex
 alcf-ai agent configure opencode --include-experimental  # add non-whitelisted models
@@ -203,7 +206,10 @@ Any client that speaks the OpenAI API can use the base URLs in section 3. If a h
 
 ## 5. Known issues and troubleshooting
 
-Below are a list of known issues and fixes. Feel free to reach out to fellow DESC Member **Patrick Wells** on Slack or post in the `#opencosmo` Slack channel for any inquiries.
+Below is a list of known issues and fixes. If you run into a problem, contact:
+
+- **Patrick Wells** (DESC member): send a direct message on the Discovery Alliance Slack workspace.
+- The `#opencosmo` Slack channel, for general questions.
 
 | Symptom | Cause | Fix |
 | --- | --- | --- |
