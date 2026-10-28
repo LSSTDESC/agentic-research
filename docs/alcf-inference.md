@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-With a NERSC account you can point a coding agent (OpenCode, Pi, Claude Code, Codex) at open-weight models hosted by ALCF, through an OpenAI- and Anthropic-compatible API with **no usage caps**. Access is granted through the OpenCosmo Globus group. Authentication uses Globus with your NERSC identity.
+With a NERSC account you can point a coding agent (OpenCode, Pi, Claude Code, Codex) at open-weight models hosted by ALCF, through an OpenAI- and Anthropic-compatible API with **no usage caps**. A NERSC account is all you need: authentication uses Globus with your NERSC identity.
 
 The shortest path, using [uv](https://docs.astral.sh/uv/) and [opencode](https://opencode.ai/) installed:
 
@@ -22,10 +22,10 @@ This can be done on your local machine, directly at NERSC or at CC-IN2P3.
 
 Access to the inference service is obtained through the Globus compute portal, with NERSC as identity provider.
 
-If you can already log in to OpenCosmo, you have access. The service accepts Globus logins only from DOE-lab identity providers. `nersc.gov` is one of them, but a university or CNRS identity alone is rejected.
+If you have a NERSC account, you have access. The service accepts Globus logins only from DOE-lab identity providers. `nersc.gov` is one of them, but a university or CNRS identity alone is rejected.
 
 1. **Check.** Open [inference.alcf.anl.gov](https://inference.alcf.anl.gov/), choose *NERSC* as the identity provider and log in. If the chat UI loads, skip to section 2.
-2. **Request.** If you are refused, log in to the OpenCosmo portal with the same NERSC identity and submit the access request it prompts for. Eligibility is a NERSC or ALCF account, or a DOE-lab affiliation. Approval adds you to the OpenCosmo Globus group ([OpenCosmo paper, §4.5](https://arxiv.org/pdf/2607.16059)). DESC members should also check the *Getting Started* tab pinned in the DESC channel.
+2. **If you are refused,** make sure you picked *NERSC* (not your university or CNRS) as the identity provider. If it still fails, see section 5. DESC members should also check the *Getting Started* tab pinned in the DESC channel.
 3. **Link identities (optional).** If your everyday Globus account uses another identity, link your NERSC identity to it at [app.globus.org](https://app.globus.org/). Then log in the same way every time. Mixing unlinked identities causes `IdentityMismatchError` (section 6).
 
 To hear about maintenance and new models, join the [service mailing list](https://mailman.cels.anl.gov/mailman3/lists/inference-service-notify.lists.alcf.anl.gov/).
@@ -226,4 +226,3 @@ If you publish work that used the service, include the Non-INCITE, Non-ALCC ackn
 - [Available Models](https://docs.alcf.anl.gov/services/inference-endpoints/models/)
 - [alcf-ai CLI and SDK](https://docs.alcf.anl.gov/services/inference-endpoints/alcf-ai/)
 - [API Usage](https://docs.alcf.anl.gov/services/inference-endpoints/api/)
-- [OpenCosmo: Community Portal and Analysis Framework (arXiv 2607.16059)](https://arxiv.org/pdf/2607.16059)
