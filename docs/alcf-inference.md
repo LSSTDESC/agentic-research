@@ -18,6 +18,8 @@ And select the `inkling-bf16`, `muse-spark-bf16` or `nemotron-3-ultra` models fr
 
 This can be done on your local machine, directly at NERSC or at CC-IN2P3.
 
+Stuck? Send a direct message to **Patrick Wells** on the Discovery Alliance Slack workspace (see section 5).
+
 ## 1. Get access
 
 Access to the inference service is obtained through the Globus compute portal, with NERSC as identity provider.
