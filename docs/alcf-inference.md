@@ -60,7 +60,7 @@ alcf-tokens get-token inference     # prints a bearer token for curl or other cl
 
 On Perlmutter, `$HOME` is shared across login nodes, so a single login covers all of them. No browser opens there. Check on first use that the login prints a URL you can open on your laptop.
 
-**Rule for agents:** have the agent fetch a fresh token through a helper command rather than storing a token string. A copied token stops working after 48 h, often in the middle of a session. This is handled by `alcf-ai configure`.
+**Rule for agents:** have the agent fetch a fresh token through a helper command rather than storing a token string. A copied token stops working after 48 h, often in the middle of a session. This is handled by `alcf-ai agent configure`.
 
 ## 3. Pick a cluster and model
 
