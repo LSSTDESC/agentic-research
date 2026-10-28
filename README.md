@@ -14,6 +14,10 @@ We welcome ideas, workflows, and community activities from across DESC. This spa
 
 **Share what you learn.** Use [Show & Tell](https://github.com/LSSTDESC/agentic-research/discussions/categories/show-and-tell) for useful tools, demonstrations, experiences, and lessons from your research.
 
+## Resources
+
+**Run coding agents on ALCF-hosted models.** With a NERSC account, you can connect OpenCode, Pi, Claude Code, or Codex to open-weight models hosted by ALCF, with no usage caps. [Read the ALCF inference guide](docs/alcf-inference.md).
+
 ## 🚀 First activity: Lightcone Research Pilot
 
 
