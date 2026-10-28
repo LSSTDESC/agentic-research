@@ -92,7 +92,7 @@ To override the default model and cluster, use the `-m` and `-c` options. This i
 alcf-ai agent configure claude -m nemotron-3-ultra -c minerva
 ```
 
-**Want to configure your harnesses manually?**
+**Want to configure your harnesses manually?** You can skip this if you ran `alcf-ai agent configure` above. It already writes these settings for you.
 <details>
 <summary>Click to expand the manual configurations</summary>
 
