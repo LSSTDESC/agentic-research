@@ -1,8 +1,8 @@
-# ALCF Inference Service for agentic workflows for DESC users
+# ALCF Inference Service for agentic workflows
 
 ## TL;DR
 
-With a NERSC account you can point a coding agent (OpenCode, Pi, Claude Code, Codex) at open-weight models hosted by ALCF, through an OpenAI- and Anthropic-compatible API with **no usage caps**. A NERSC account is all you need: authentication uses Globus with your NERSC identity.
+DESC users, with a NERSC account, you can point a coding agent (OpenCode, Pi, Claude Code, Codex) at open-weight models hosted by ALCF, through an OpenAI- and Anthropic-compatible API with **no usage caps**. A NERSC account is all you need: authentication uses Globus with a NERSC identity.
 
 The shortest path, using [uv](https://docs.astral.sh/uv/) and [opencode](https://opencode.ai/) installed:
 
