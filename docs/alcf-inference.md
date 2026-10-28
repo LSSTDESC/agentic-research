@@ -41,6 +41,8 @@ pipx install alcf-ai alcf-tokens
 pip install alcf-ai alcf-tokens        # inside an activated env
 ```
 
+Prefer `uv tool` or `pipx`. They put both CLIs on your `PATH` in every shell, so the agent configuration from section 4 can call `alcf-tokens` to refresh tokens automatically and you never have to refresh them by hand. With a plain `pip` install, the CLIs exist only while that env is active, and an agent started from another shell cannot refresh its token.
+
 Log in once, then verify:
 
 ```bash
@@ -75,7 +77,7 @@ All paths sit under `https://inference-api.alcf.anl.gov/resource_server`. The fu
 
 ## 4. Configure your agent
 
-The recommended route is `alcf-ai agent configure <agent>`. It writes the config, and when `alcf-tokens` is on your `PATH` it wires up automatic token refresh. If neither CLI is on `PATH`, it embeds a token that expires after 48 h. You can re-run it at any time.
+The recommended route is `alcf-ai agent configure <agent>`. It writes the config, and when `alcf-tokens` is on your `PATH` it wires up automatic token refresh. Installing with `uv tool` or `pipx` (section 2) guarantees this. If neither CLI is on `PATH`, it embeds a token that expires after 48 h. You can re-run it at any time.
 
 ```bash
 alcf-ai agent configure opencode  # also: pi | claude | codex
